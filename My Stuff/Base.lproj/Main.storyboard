@@ -5,6 +5,20 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue</string>
+        </mutableArray>
+        <mutableArray key="HelveticaNeueLights.ttc">
+            <string>HelveticaNeue-LightItalic</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -218,6 +232,11 @@
                                 <state key="normal" title="Make New Post">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="oMd-MW-mee"/>
+                                    </mask>
+                                </variation>
                                 <connections>
                                     <action selector="makePostBtnPressed:" destination="E3X-0f-iCt" eventType="touchUpInside" id="v51-SG-tX9"/>
                                 </connections>
@@ -236,6 +255,7 @@
                             <constraint firstItem="LFt-wS-mqs" firstAttribute="leading" secondItem="BFB-fc-XIf" secondAttribute="leadingMargin" id="RtA-QE-5uN"/>
                             <constraint firstItem="FfU-Rz-IZb" firstAttribute="leading" secondItem="BFB-fc-XIf" secondAttribute="leadingMargin" id="UrX-t7-anB"/>
                             <constraint firstItem="FfU-Rz-IZb" firstAttribute="top" secondItem="ksU-Dp-Poa" secondAttribute="bottom" constant="25" id="byu-Qh-nK8"/>
+                            <constraint firstItem="02J-CF-uc2" firstAttribute="centerX" secondItem="BFB-fc-XIf" secondAttribute="centerX" id="cr6-gz-YFw"/>
                             <constraint firstItem="HV7-vs-A6k" firstAttribute="leading" secondItem="BFB-fc-XIf" secondAttribute="leading" id="ftS-il-eiu"/>
                             <constraint firstItem="bjf-bf-dyK" firstAttribute="centerX" secondItem="BFB-fc-XIf" secondAttribute="centerX" id="hNQ-aZ-w0c"/>
                             <constraint firstItem="02J-CF-uc2" firstAttribute="trailing" secondItem="BFB-fc-XIf" secondAttribute="trailingMargin" id="iOc-ru-uZL"/>
@@ -245,6 +265,11 @@
                             <constraint firstItem="HV7-vs-A6k" firstAttribute="top" secondItem="BFB-fc-XIf" secondAttribute="top" id="sbW-Y3-Ban"/>
                             <constraint firstItem="02J-CF-uc2" firstAttribute="top" secondItem="LFt-wS-mqs" secondAttribute="bottom" constant="25" id="xii-CR-KQx"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="BdI-sh-kke"/>
+                            </mask>
+                        </variation>
                     </view>
                     <connections>
                         <outlet property="descField" destination="LFt-wS-mqs" id="Jbi-Vs-v2y"/>

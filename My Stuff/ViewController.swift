@@ -17,7 +17,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
-        
 /*
         more flexible way to set cell's row height:
         tableView.estimatedRowHeight = 87.0
@@ -25,9 +24,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         // 來知道 DataService 發出的 notification。
         // observer：傾聽通知的類別，self自己。selector：要呼叫的函數，有參數記得加分號。name：接收的通知名稱。
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPosstLoaded:", name: "postsLoaded", object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "onPostsLoaded:", name: "postsLoaded", object: nil)
         
-        
+        // 程式打開時載入之前的NSUserDefaults
+        DataService.instance.loadPosts()
     
     }
     
@@ -39,7 +39,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let post = DataService.instance.loadPosts[indexPath.row]
+        let post = DataService.instance.loadedPosts[indexPath.row]
         if let cell = tableView.dequeueReusableCellWithIdentifier("PostCell") as? PostCell { // 需要轉型
             cell.configureCell(post)
             return cell
@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataService.instance.loadPosts.count
+        return DataService.instance.loadedPosts.count
     }
     
 //    點選row之後要做的事
