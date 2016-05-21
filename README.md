@@ -5,4 +5,4 @@
 - Add titles
 - Add decriptions
 
-### It will save this information for you.
+### It will save information for you.
