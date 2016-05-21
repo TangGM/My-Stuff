@@ -46,7 +46,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" translatesAutoresizingMaskIntoConstraints="NO" id="fbf-Eh-9lc">
-                                                    <rect key="frame" x="86" y="32" width="466" height="45.5"/>
+                                                    <rect key="frame" x="86" y="32" width="466" height="46"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45.5" id="9UA-zx-gVf"/>
                                                     </constraints>
@@ -181,8 +181,8 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ksU-Dp-Poa">
                                 <rect key="frame" x="180" y="99" width="240" height="240"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
-                                <state key="normal" title="Add Pic">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <state key="normal" title="＋ Add Pic">
                                     <color key="titleColor" red="0.99215686274509807" green="0.53725490196078429" blue="0.16470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
@@ -238,6 +238,8 @@
                             <constraint firstItem="FfU-Rz-IZb" firstAttribute="top" secondItem="ksU-Dp-Poa" secondAttribute="bottom" constant="25" id="byu-Qh-nK8"/>
                             <constraint firstItem="HV7-vs-A6k" firstAttribute="leading" secondItem="BFB-fc-XIf" secondAttribute="leading" id="ftS-il-eiu"/>
                             <constraint firstItem="bjf-bf-dyK" firstAttribute="centerX" secondItem="BFB-fc-XIf" secondAttribute="centerX" id="hNQ-aZ-w0c"/>
+                            <constraint firstItem="02J-CF-uc2" firstAttribute="trailing" secondItem="BFB-fc-XIf" secondAttribute="trailingMargin" id="iOc-ru-uZL"/>
+                            <constraint firstItem="02J-CF-uc2" firstAttribute="leading" secondItem="BFB-fc-XIf" secondAttribute="leadingMargin" id="oZe-tM-00F"/>
                             <constraint firstItem="ksU-Dp-Poa" firstAttribute="centerX" secondItem="bjf-bf-dyK" secondAttribute="centerX" id="qfZ-eT-wCv"/>
                             <constraint firstItem="LFt-wS-mqs" firstAttribute="top" secondItem="FfU-Rz-IZb" secondAttribute="bottom" constant="25" id="rb2-IA-Vnl"/>
                             <constraint firstItem="HV7-vs-A6k" firstAttribute="top" secondItem="BFB-fc-XIf" secondAttribute="top" id="sbW-Y3-Ban"/>
